@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ul.grid li.loading p,
+ul.grid li.loading h4 {
+  background-color: rgb(133, 133, 133);
+  color: rgb(133, 133, 133);
+} */
+
+.body {
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(19, 25, 33);
+  color: white;
+  height: 100px;
+  padding: 0 2rem;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius:13px ;
+}
+
+header div i {
+  color: rgb(254, 189, 105);
+
+}
+
+header form {
+  width: 60%;
+  height: 55px;
+  display: flex;
+  border-radius: 13px;
+}
+
+header form input {
+
+  all: unset;
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  border-bottom-left-radius: 13px;
+  border-top-left-radius: 13px;
+  padding-left: 1rem;
+  color: rgb(114, 114, 114);
+  background-color: rgb(244, 244, 244);
+}
+
+header form input:focus-visible {
+  outline: none;
+
+}
+
+header form button {
+  all: unset;
+  height: 100%;
+  width: 60px;
+  color: rgb(96, 39, 4);
+  background-color: rgb(254, 189, 105);
+  border-bottom-right-radius: 13px;
+  border-top-right-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*******undernav********
+************************/
+.under_nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 47, 62);
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.under_nav ul {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.under_nav ul li a {
+  text-decoration: none;
+  color: rgb(254, 189, 105);
+  font-size: 1.5rem;
+}
+
+.under_nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/*********************
+          Header
+**********************/
+
+aside {
+  /* max-width: 30%; */
+  border-right: 1px solid rgba(171, 171, 171, 0.477);
+  background-color: white;
+  box-shadow: 5px 2px rgba(171, 171, 171, 0.477);
+}
+
+aside h2 {
+  padding: 1rem 0.8rem;
+  font-weight: 800;
+  font-size: 2rem;
+  overflow-wrap:break-word ;
+}
+
+aside ul li {
+  padding: 1rem;
+  
+
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: rgb(0, 112, 182);
+  font-size: 1.5rem;
+}
+
+aside ul li a:hover {
+  color: rgb(205, 133, 0);
+}
+
+/*********************
+          Aside
+**********************/
+
+.flex_1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+ul.grid_1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 16px;
+grid-row-gap: 11px;
+*/
+} 
+
+article {
+  background-color: white;
+  width: 350px;
+  height: 500px;
+  margin: 0.5rem;
+  border: 1px solid rgba(171, 171, 171, 0.477);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(171, 171, 171, 0.477);
+}
+
+article:hover {
+  box-shadow: 2px 4px 4px 2px rgba(145, 145, 145, 0.477);
+}
+
+article .img_card_contain {
+  width: 100%;
+  height: 50%;
+  padding-top: 1rem;
+
+}
+
+article .img_card_contain img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+article .info_card_contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  padding: 1.5rem;
+}
+
+/* .contain_title_card{
+  
+} */
+.contain_euro {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+article .info_card_contain h3 {
+  padding: 2rem 0;
+
+}
+
+article .info_card_contain p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(0, 112, 182);
+}
+
+.euro {
+  color: orange;
+}
+
+.stelle  {
+  color: orange;
+
+}
+
+/*********************
+          Main
+**********************/
+@media only screen and (max-width: 600px) {
+  aside {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+  }
+  .flex_1 {
+ flex-direction:column ;
+ width: 100%;
+}
+  aside h2{
+    display: none;
+  }
+  aside ul  {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+  }
+  aside ul li {
+    padding: 0.5rem;
+    
+  
+  }
+  aside ul li a {
+    text-decoration: none;
+    color: rgb(0, 112, 182);
+    font-size: 1rem;
+  }
+}
